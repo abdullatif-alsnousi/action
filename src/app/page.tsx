@@ -1,6 +1,5 @@
+import Image from 'next/image';
 import styles from './page.module.css';
-import VercelLogo from '@/assets/vercel';
-import NextLogo from '@/assets/next';
 
 export default function Home() {
   return (
@@ -12,17 +11,37 @@ export default function Home() {
         </p>
         <div>
           <a
-            href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+            href='https://nextjs.org/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            By <VercelLogo />
+            <Image
+              src='/next.svg'
+              alt='Next Logo'
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
           </a>
         </div>
       </div>
 
       <div className={styles.center}>
-        <NextLogo />
+        <a
+          href='https://abdullatif.ly/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Image
+            className={styles.logo}
+            src='/logo.svg'
+            alt='Abdullatif Logo'
+            width={180}
+            height={37}
+            priority
+          />
+        </a>
       </div>
 
       <div className={styles.grid}>
